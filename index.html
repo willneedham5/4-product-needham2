@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- character encoding -->
+        <meta charset="UTF-8">
+        <!-- title tag -->
+        <title>Product/Company Page Project - Mr. Messina</title>
+        <!-- mobile-friendly viewport -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- W3.CSS stylesheet -->
+        <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- custom style -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Syncopate:700" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#sugarlofe" class="w3-bar-item w3-button">Sugarloaf USA</a>
+                <a href="#restaurants" class="w3-bar-item w3-button w3-hide-small">Restaurants</a>
+                <a href="#trails" class="w3-bar-item w3-button w3-hide-small">Trails</a>
+                <a href="#resort" class="w3-bar-item w3-button w3-hide-small">Resort</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#sugarlofe" class="w3-bar-item w3-button">Sugarloaf USA</a>
+                <a href="#restaurants" class="w3-bar-item w3-button">Restaurants</a>
+                <a href="#trails" class="w3-bar-item w3-button">Trails</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
+
+       <div class="w3-content">
+                    <img class="mySlides" src="img/sugarlofe2.jpg" style="width:100%">
+                    <img class="mySlides" src="img/baselodge.jpg" style="width:100%">
+            
+                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-padding-64" id="restaurants">
+
+            <div class="w3-row w3-container">
+                <h1>Restaurants</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-third">
+                    <a href="#modal1">
+                        <div class="w3-card w3-hover-shadow">
+                            <div class="container w3-center w3-jumbo w3-text-theme2">
+                                <i class="fa fa-book"></i>
+                            </div>
+                            <div class="w3-container w3-center w3-theme2">
+                                <h3><a href="https://www.thebagandkettle.com/" target="_blank">The Bag</a></h3> 
+                                  
+                            </div>
+                        </div>
+
+
+                    </a>
+
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3><a href="http://www.shipyardbrewhaus.com/" target="_blank">Shipyard Bew Huas</a></h3>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-third">
+                    <div class="w3-card">
+                        <div class="container w3-center w3-jumbo w3-text-theme2">
+                            <i class="fa fa-book"></i>
+                        </div>
+                        <div class="w3-container w3-center w3-theme2">
+                            <h3><a href="https://www.yelp.com/biz/widowmaker-lounge-carrabassett-valley" target="_blank">Widowmaker Lounge</a></h3>  
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Training Section) -->
+        <section class="w3-padding-64" id="trails">
+
+            <div class="w3-row w3-container">
+                <h1>Trails</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/trail-map.jpg" class="w3-image" alt="Soccer Team Training">
+                    </div>
+                </div>
+                <div class="w3-half">
+
+                    <button onclick="accordion('dribbling')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Green Circle</button>
+
+                    <div id="dribbling" class="w3-container w3-hide">
+                        <p>Beginner</p>
+                    </div>
+
+                    <button onclick="accordion('passing')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Blue Square</button>
+
+                    <div id="passing" class="w3-container w3-hide">
+                        <p>Intermediate</p>
+                    </div>
+
+                    <button onclick="accordion('positioning')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Black Dimond</button>
+
+                    <div id="positioning" class="w3-container w3-hide">
+                        <p>Experts Only </p>
+                    </div>
+
+                    <button onclick="accordion('defense')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                        Double Black Dimond</button>
+
+                    <div id="defense" class="w3-container w3-hide">
+                        <p>Most Difficult</p>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Second Parallax Image with Logo Text -->
+        <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+        </div>
+
+
+        <!-- Container (Teams Section) -->
+        <section class="w3-padding-64" id="resort">
+
+            <div class="w3-row w3-container">
+                <h1>Resorts</h1>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-card">
+                        <img src="img/hotel.jpg" class="w3-image" alt="Soccer Team Training">
+                    </div>
+                </div>
+                <div class="w3-half">
+
+                    <div class="w3-bar w3-theme">
+                        <button class="w3-bar-item w3-button" onclick="openTab('Sugarlofe')">Sugarloaf Hotel</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Sugarlofe-inn')">Sugarloaf Inn</button>
+                        <button class="w3-bar-item w3-button" onclick="openTab('Condominums')">Condominums</button>
+                    </div>
+
+                    <div id="Sugarlofe" class="tab">
+                        <div class="w3-container">
+                            <h2>Sugarloaf Mountain Hotel</h2>
+                            <p>A full-service resort hotel located right in the heart of the Sugarloaf Village, the Sugarloaf Mountain Hotel evokes the warmth of a country farmhouse and the comfort of home. With a design inspired by the classic New England farmhouses that dot Franklin County, Maine, the Sugarloaf Mountain Hotel utilizes honest, solid materials and fixtures, sourced locally whenever possible. Our recently-renovated hotel restaurant, 45 North, features walls paneled with lumber salvaged from the Penobscot River and live-edge bar tops constructed from locally harvested timber. Our custom-built 30-person outdoor hot tub offers a relaxing conclusion to your round of golf or day on the mountain, while exclusive Boyne Beds provide a luxurious sleeping experience – allowing you to wake up refreshed and ready to tackle the day’s adventures.
+
+</p>
+                        </div>
+
+                    </div>
+
+                    <div id="Sugarlofe-inn" class="tab" style="display:none">
+                        <h2>Sugarloaf Inn</h2>
+                        <p>Convenient, cozy, and affordable describe the slopeside Sugarloaf Inn.  Located directly on the Birches Trail, the Sugarloaf Inn is one of Sugarloaf’s original lodges and offers outstanding mountain views and slopeside convenience. Enjoy a hearty meal and camaraderie at the in-house Shipyard BrewHaus Restaurant between runs all winter, while summer amenities include tennis courts.</p> 
+                    </div>
+
+                    <div id="Condominums" class="tab" style="display:none">
+                        <h2>Condominums</h2>
+                        <p>You can select from hundreds of condominiums ranging in unit size from studios to five bedrooms or private homes. Best of all, every property is located right on the resort and is within walking distance of the slopes.</p>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Javascript -->
+
+        <script src="js/topNav.js"></script>
+        <script src="js/accordion.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/slideshow.js"></script>
+
+    </body>
+
+</html>
